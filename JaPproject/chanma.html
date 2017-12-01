@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Avisa al navegador que va a tabajar con HTML -->
+<html>
+<!-- Etiqueta que engloba la página -->
+<head>
+	<meta charset="UTF-8">
+	<!--Dentro de la etiqueta meta, marcamos el charset deseado, en este caso, permite el uso de acentos, Ñ y demás caracteres de la lengua española-->
+	<title>G&R Game Shop</title>
+	<!-- Con la etiqueta Link, llamamos un archivo externo, en este caso, los estilos de css, los cuales se encuentran en un archivo .css-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<!--Menu de botones superior, imgen de portada y texto-->
+	<div class="container">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">G&R</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarColor02">
+				<ul class="navbar-nav mr-auto" id="mainbtn">
+				</ul>
+				<div class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" placeholder="Busca artículos!" type="text" id=searchmenuimput>
+					<button class="btn btn-secondary my-2 my-sm-0" onclick="searchItems()">Buscar</button>
+				</div>
+			</div>
+		</nav>
+		<div class="jumbotron mainjumbo">
+			<h1 class="display-3">G&R</h1>
+			<p>Your favorite Game Shop</p>
+			<p><a class="btn btn-primary btn-lg" href="chanma.html">Mas sobre nosotros...</a></p>
+		</div>
+
+		<!--Imagen del apartado-->
+		<div>
+			<div style='background-image:;background-repeat: no-repeat;'>
+				<img src='recursos/chanma.jpg' id="chanma">
+			</div>
+			<div class="chanmadesc">
+				<h1>Chanclas Magicas group</h1>
+				<p>El grupo, a continuación referido como "Chanma", fue fundado en verano 2014.<br> En la actualidad se reunen de manera virtual para conformar guilds (o clanes) en varios videojuegos.
+				</p>
+				<p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. <br>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. </p>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-content" style="padding: 5px"><p> Contacto: <br>        0123 456 789 <br> gandr@mail.com </p></div>
+			<div class="footer-content" style="padding: 5px"><p> Copyright &copy; Todos los derechos reserevados </p></div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/db/db.js"></script>
+	<script type="text/javascript" src="js/db/users.js"></script>
+	<script type="text/javascript" src="js/db/items.js"></script>
+	<script type="text/javascript" src="js/botones.js"></script>
+	</html>

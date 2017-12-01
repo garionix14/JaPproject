@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Avisa al navegador que va a tabajar con HTML -->
+<html>
+<!-- Etiqueta que engloba la página -->
+<head>
+	<meta charset="UTF-8">
+	<!--Dentro de la etiqueta meta, marcamos el charset deseado, en este caso, permite el uso de acentos, Ñ y demás caracteres de la lengua española-->
+	<title>G&R Game Shop</title>
+	<!-- Con la etiqueta Link, llamamos un archivo externo, en este caso, los estilos de css, los cuales se encuentran en un archivo .css-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">G&R</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarColor02">
+				<ul class="navbar-nav mr-auto" id="mainbtn">
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" placeholder="Busca artículos!" type="text">
+					<button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+				</form>
+			</div>
+		</nav>
+		<div class="jumbotron mainjumbo">
+			<h1 class="display-3">G&R</h1>
+			<p>Your favorite Game Shop</p>
+			<p><a class="btn btn-primary btn-lg" href="chanma.html">Mas sobre nosotros...</a></p>
+		</div>
+		<div class="divarticulos" id="ofertasdiv">
+			<!-- Dentro de este div aparecerán las ofertas! -->
+		</div>
+		<footer class="footer">
+			<div class="footer-content" style="padding: 5px"><p> Contacto: <br>        0123 456 789 <br> gandr@mail.com </p></div>
+			<div class="footer-content" style="padding: 5px"><p> Copyright &copy; Todos los derechos reserevados </p></div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/db/db.js"></script>
+	<script type="text/javascript" src="js/db/users.js"></script>
+	<script type="text/javascript" src="js/db/items.js"></script>
+	<script type="text/javascript" src="js/db/favorites.js"></script>
+	<script type="text/javascript" src="js/botones.js"></script>
+	<script type="text/javascript" src="js/db/dummy.js"></script>
+	<script type="text/javascript">printOfertas();</script>
+	</html>

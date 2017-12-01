@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Avisa al navegador que va a tabajar con HTML -->
+<html>
+<!-- Etiqueta que engloba la página -->
+<head>
+	<meta charset="UTF-8">
+	<!--Dentro de la etiqueta meta, marcamos el charset deseado, en este caso, permite el uso de acentos, Ñ y demás caracteres de la lengua española-->
+	<title>G&R Game Shop</title>
+	<!-- Con la etiqueta Link, llamamos un archivo externo, en este caso, los estilos de css, los cuales se encuentran en un archivo .css-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">G&R</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarColor02">
+				<ul class="navbar-nav mr-auto" id="mainbtn">
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" placeholder="Busca artículos!" type="text">
+					<button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+				</form>
+			</div>
+		</nav>
+		<div class="jumbotron mainjumbo">
+			<h1 class="display-3">Inicia tu sesion</h1>
+			<p>Inicia sesión para entrar a disfrutar <br> de nuestras maravillosas ofertas</p>
+		</div>
+		<div class="rowCont">
+			<div class="card cardDiv">
+				<div class="card-block">
+					<legend>
+						Inicio de sesión
+					</legend>
+					<div id="loginfail">
+					</div>
+					<div class="form-group">
+						<label class="col-form-label" for="username">Usuario</label>
+						<input type="text" class="form-control" id="username" placeholder="Usuario">
+					</div>
+					<div class="form-group">
+						<label for="password">Contraseña</label>
+						<input type="password" class="form-control" id="password" placeholder="Contraseña">
+					</div>
+					<div class="rowBtn">
+						<button type="button" class="btn btn-primary clickable" onclick="loginUser()">Ingresa!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/db/db.js"></script>
+<script type="text/javascript" src="js/db/users.js"></script>
+<script type="text/javascript" src="js/db/items.js"></script>
+<script type="text/javascript" src="js/botones.js"></script>
+</html>

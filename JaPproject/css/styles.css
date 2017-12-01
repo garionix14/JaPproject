@@ -1,0 +1,145 @@
+body {
+	background-color: skyblue;
+}
+
+.container{
+	background-color: skyblue;
+	width: 100%;
+	max-width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	margin-top:40px;
+	min-height: calc(100vh - 40px);
+}
+
+.mainjumbo{
+	background-image:url('../recursos/jumboimagen.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mainjumbo .display-3{
+	color: white;
+	font-weight: 500;
+	font-size: 80px;
+}
+
+.mainjumbo p{
+	color: white;
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.row{
+	max-width: 100%;
+	width: 100%;
+}
+
+.rowCont{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.rowBtn{
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.clickable{
+	cursor: pointer;
+}
+
+.cardDiv{
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 30px;
+}
+
+.exitomsg{
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px;
+}
+
+.destacados{
+	margin: auto;
+	max-width: 380px;
+}
+
+.inicio {
+	margin: auto;
+	background-color: rgb(112, 146, 190);
+	text-align: center;
+	border-radius: 5px;
+}
+
+.divarticulos {
+	background-color: rgb(112, 146, 190);
+	border-radius: 5px;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	text-align: center;
+}
+
+#itemdestacados {
+	margin: auto;
+	border-radius: 5px;
+}
+
+.pricestyle {
+	background-color: rgb(112, 146, 190);
+	padding-top: 5px;
+	border-radius: 5px;
+}
+
+.imgthumb{
+	max-width: 75px;
+	max-height: 75px;
+}
+
+.table-bordered th, .table-bordered td{
+	border: none;
+}
+
+.destacados .card-img-top{
+	max-width: 350px;
+	max-height: 350px;
+	margin: 0 auto;
+}
+
+.destacados img{
+	display: block;
+	margin: 0 auto;
+}
+
+#chanma {
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.chanmadesc {
+	background-color: rgb(112, 146, 190);
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin: auto;
+	width: 75%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.footer {
+	background-color: rgb(112, 146, 190);
+	border-style: dashed;
+	margin-top: 20px;
+}
+
+.footer-content {
+	padding: 5px;
+	display: inline-flex;
+}
